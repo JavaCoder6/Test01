@@ -1,0 +1,43 @@
+package com.dream.Thread03;
+
+public class Date {
+	String name;
+	int age;
+	public static Date getDatece(String name,int age){
+		Date date = Test04.local.get();
+		if(date == null){
+			
+			date = new Date(name,age);
+			
+		}
+		
+		return date;
+	}
+	public Date() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Date(String name, int age) {
+		super();
+		this.name = name;
+		this.age = age;
+	}
+	@Override
+	public String toString() {
+		return "Date [name=" + name + ", age=" + age + "]";
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	
+
+}
